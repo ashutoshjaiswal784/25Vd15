@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-        html, body {
+    <style>
+        html,
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -13,7 +15,7 @@
 
 
         main {
-            width: 4010px;     
+            width: 4010px;
             height: 2010px;
             background-color: gray;
             margin: 0 auto;
@@ -37,7 +39,7 @@
         .content {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;   
+            flex-wrap: nowrap;
             gap: 10px;
         }
 
@@ -47,38 +49,47 @@
 
             width: 2000px;
             height: 2000px;
-}
+        }
+
         .inside {
             text-align: left;
 
         }
-        
+
 
         .box3 {
             width: 100px;
             height: 25px;
-            background-color: rgb(223, 19, 19);
-        }
-        .red {
-            width: 400px;
-            height: 85px;
-            border-radius: 25px;
             background-color: white;
-            text-align: center  ;
         }
-               .large-button {
-                width: 600px;
-                border-radius: 25px;
-                height: 200px;
-                font-size: 87px;
-                padding: 10px 20px;
-            }
+
+        .large-button {
+            width: 600px;
+            border-radius: 25px;
+            height: 200px;
+            font-size: 87px;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            cursor: pointer;
+            transition-duration: 0.4s;
+
+        }
+
         .container {
             max-width: 4500px;
             height: 400px;
             margin: 0 auto;
             background-color: white;
+            text-align: center;
 
+        }
+
+        .red {
+            width: 400px;
+            height: 85px;
+            border-radius: 25px;
+            background-color: red;
+            text-align: center;
         }
 
         .header {
@@ -86,33 +97,41 @@
             background: black;
             color: white;
             padding: 30px;
+            text-align: center;
+            align-items: center;
         }
-                
+
         .header-info {
 
-            font-size : 150px;
+            font-size: 150px;
             text-align: center;
         }
-                .logo {
+
+        .logo {
             width: 200px;
             height: 200px;
             background-color: #c0c0c0;
             margin-right: 20px;
 
         }
-     </style>
+
+        .button1:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-        <div class="container">
+    <div class="container">
         <div class="header">
             <div class="logo"> <img src="logo.jpeg" style="width:200px;height:200px;"></div>
             <div class="header-info">
 
-                    AMAZON
-                </div>
+                AMAZON
             </div>
         </div>
+    </div>
 
     <div class="box3"></div>
 
@@ -123,16 +142,28 @@
             </div>
 
             <div class="box">
-                <div class="inside"><p style="font-size: 100px"> 
-                Dell 15 Thin & Light Laptop, 13th Gen Intel Core i3-1305U Processor, 8GB DDR4, 512GB SSD, 15.6" (39.62cm) FHD 120Hz 250 nits, Intel UHD Graphics, Windows 11 + MSO'21, 15 Months McAfee, Black, 1.66kg,FHD Camera w/Shutter Laptop</p>
+                <div class="inside">
+                    <p style="font-size: 100px">Dell 15 Thin & Light Laptop, 13th Gen Intel Core i3-1305U Processor, 8GB
+                        DDR4, 512GB SSD, 15.6" (39.62cm) FHD 120Hz 250 nits, Intel UHD Graphics, Windows 11 + MSO'21, 15
+                        Months McAfee, Black, 1.66kg FHD Camera w/Shutter Laptop</p>
                 </div>
                 <div class="inside">
-                    <p style="font-size: 50px"><a href="https://www.hp.com/in-en/shop/laptops/product-details/220Z6PA/15s-fd0573tu-laptop" target="_blank">More Details</a></p>
+                    <p style="font-size: 50px"><a
+                            href="https://www.hp.com/in-en/shop/laptops/product-details/220Z6PA/15s-fd0573tu-laptop"
+                            target="_blank">More Details</a></p>
                 </div>
-                <div class="red"><p style="font-size: 50px">Limited time deal</p></div>
-                <div class="inside"><p style="font-size: 100px"><s>₹61,000</s>₹47,390</p></div>
-                <button  class="large-button" >ADD TO CART</button> <br> <br>
-                <button  class="large-button" >BUY NOW</button>
+                <div class="red">
+                    <p style="font-size: 50px">Limited time deal</p>
+                </div>
+                <div class="inside">
+                    <p style="font-size: 100px"><s>₹70,000</s>₹41,590</p>
+                </div>
+                <button class="large-button">
+                    <div class="button1">ADD TO CART</div>
+                </button> <br> <br>
+                <button class="large-button">
+                    <div class="button1">BUY NOW</div>
+                </button>
 
 
             </div>
@@ -140,4 +171,5 @@
     </main>
 
 </body>
+
 </html>
